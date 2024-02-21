@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-audio"
+version = "0.1.0"
+description = "Download and convert YouTube audio"
+readme = "README.md"
+authors = [
+  { name = "DS" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+  "pytube >= 14.0.0",
+  "pydub >= 0.25.1",
+  "ffmpeg-python"
+]
+
+[project.scripts]
+youtube-audio = "youtube_audio:main"
