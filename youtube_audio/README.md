@@ -1,4 +1,4 @@
-# Simple Youtube Audio Downloaded
+# Simple Youtube Audio Downloader
 
 ## Use with:
 ```
