@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tg_message"
+version = "0.0.1"
+description = "Send message to Telegram via command line"
+readme = "README.rst"
+
+authors = [
+  {name = "DS"}
+]
+
+license = {text = "MIT license"}
+dependencies = [
+  "certifi==2024.2.2",
+  "charset-normalizer==3.3.2",
+  "click==8.1.7",
+  "colorama==0.4.6",
+  "idna==3.7",
+  "markdown-it-py==3.0.0",
+  "mdurl==0.1.2",
+  "Pygments==2.17.2",
+  "requests==2.31.0",
+  "rich==13.7.1",
+  "shellingham==1.5.4",
+  "typer==0.12.3",
+  "typing_extensions==4.11.0",
+  "urllib3==2.2.1"
+
+]
+
+[project.urls]
+
+bugs = "https://github.com/dsoudakov/python_modules/issues"
+changelog = "https://github.com/dsoudakov/python_modules/blob/master/changelog.md"
+homepage = "https://github.com/dsoudakov/python_modules/tg_message"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+[project.scripts]
+tg_message = "tg_message.cli:app"
